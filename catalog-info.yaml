@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-service
+  title: My test service title
+  description: My test service description
+  annotations:
+    github.com/project-slug: sengelha/testrepo
+    relativity.com/deployment-process-audited-by: steven.engelhardt
+    relativity.com/deployment-process-audited-on: 2024-06-14
+    relativity.com/deployment-process-progressive-releases: automated
+    relativity.com/deployment-process-feature-flags: launch-darkly
+    relativity.com/deployment-process-rollback-1h: manual
+    relativity.com/deployment-process-change-release-policy: yes
+    relativity.com/deployment-process-metric-based-gates: yes
+    relativity.com/deployment-process-rollback-tested-date: 2024-06-12
+    relativity.com/deployment-process-silver-observability: yes
+spec:
+  type: service
+  lifecycle: production
+  owner: ptci-1429
+  system: filepaas-bedrock
