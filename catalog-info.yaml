@@ -19,4 +19,4 @@ spec:
   type: service
   lifecycle: production
   owner: ptci-1429
-  system: filepaas-bedrock
+  system: test-system
